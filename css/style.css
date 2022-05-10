@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&display=swap');
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.mainContainer{
+    background-color: #b8c6db;
+    background-image: linear-gradient(315deg, #b8c6db 0%, #f5f7fa 100%);
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.quiz-container{
+    background-color: #fff;
+    border-radius: 10px;
+    width: 600px;
+    box-shadow: 0 0 10px 5px rgba(100,100,100,0.1);
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.quiz-header{
+    padding: 2rem;
+}
+
+h2{
+    padding: 1rem;
+    margin: 0;
+    text-align: center;
+}
+
+ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li{
+    font-size: 1.2rem;
+    margin: 1rem 0;
+}
+
+ul li label{
+    cursor: pointer;
+}
+
+button{
+    background-color: #8e44ad;
+    display: block;
+    width: 100%;
+    cursor: pointer;
+    padding: 1.3rem;
+    color: #fff;
+    font-family: inherit;
+    border: none;
+    font-size: 1rem;
+}
+
+button:hover{
+    background-color: #732d91;
+}
+
+button:focus{
+    background-color: #5e3370;
+    outline: none;
+}
+
+#prev {
+  background-color: red;
+}
+
+
+
+
+.addQuestion {  
+    border-radius: 5px;
+}
+
+
+.modalContainer {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -100%;
+}
+
+.openEditModal {
+    position: absolute;
+    top: -100%;
+    z-index: -1;
+}
+
+.openCard {
+    position: initial;
+    z-index: 4;
+}
+
+.modalContainer .modalCard {
+    display: flex;
+    flex-direction: column;
+    width: 34%;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+}
+.modalCard input {
+    width: 100%;
+    margin: 10px 0px;
+    border-radius: 5px;
+}
+#newQue {
+    padding: 10px 5px;
+}
+.modalContainer .modalCard .modalBody {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+
+
+
+.error {
+    border: red;
+}

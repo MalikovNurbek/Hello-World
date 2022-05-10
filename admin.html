@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/admin.css">
+</head>
+
+
+<body>
+
+  <div class="editModal">
+    <div class="editCard">
+      <div class="editBody">
+        <h3>Edit question</h3>
+        <input id="editQue" type="text" placeholder="Your new question" value="">
+
+        <input id="editA" type="text" placeholder="variant a">
+        <input id="editB" type="text" placeholder="variant b">
+        <input id="editC" type="text" placeholder="variant c">
+        <input id="editD" type="text" placeholder="variant d">
+        <input id="editCorrect" type="text" placeholder="correct variant">
+      </div>
+      <div class="editFooter">
+        <button onclick="" id="saveEditBtn" class="action">Save edit</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="mainContainer">
+    <div class="modalContainer">
+      <div class="modalCard">
+        <div class="modalBody">
+          <input id="newQue" type="text" placeholder="Your new question" value="">
+
+          <input id="newA" type="text" placeholder="variant a" value="">
+          <input id="newB" type="text" placeholder="variant b" value="">
+          <input id="newC" type="text" placeholder="variant c" value="">
+          <input id="newD" type="text" placeholder="variant d" value="">
+          <input id="correctVariant" type="text" placeholder="correct" value="">
+        </div>
+        <div class="modalFooter">
+          <button onclick="setQuestion()" id="add" class="action">add</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  
+
+
+
+  <div class="content">
+    
+  </div>
+
+</body>
+
+<!-- <script src="js/script.js"></script> -->
+<script src="js/admin.js"></script>
+</body>
+
+</html>
